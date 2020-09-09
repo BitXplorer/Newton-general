@@ -160,7 +160,7 @@ public class day2PExercises {
         System.out.println("Här är numret: " + numberOnly );
 
          */
-
+        /*
         //P2.15
         String input1 = JOptionPane.showInputDialog("Ange en tid enligt formatet TTMM: ");
         String input2 = JOptionPane.showInputDialog("Ange en annan tid i formatet TTMM: ");
@@ -172,10 +172,8 @@ public class day2PExercises {
         double timmar = (tid3 / 100);
         double minuter = (tid3 % 100);
 
-
-
-
-
         System.out.println("Timmar: " + timmar + " och minuter: " + minuter);
+
+         */
        }
 }
