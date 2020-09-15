@@ -160,20 +160,41 @@ public class day2PExercises {
         System.out.println("Här är numret: " + numberOnly );
 
          */
+
+        //P2.16
         /*
-        //P2.15
+        Scanner in = new Scanner(System.in);
+        System.out.print("Please enter one or more integers (Max 5 integers): ");
+        int input = in.nextInt();
+
+
+        int n2 = input / 10000 % 10;
+        int n3 = input / 1000 % 10;
+        int n4 = input / 100 % 10;
+        int n5 = input / 10 % 10;
+        int n6 = input % 10;
+        System.out.println(n2 + " " + n3 + " " + n4 + " " + n5 + " " + n6);
+
+         */
+
+        //P2.17
+        /*
         String input1 = JOptionPane.showInputDialog("Ange en tid enligt formatet TTMM: ");
         String input2 = JOptionPane.showInputDialog("Ange en annan tid i formatet TTMM: ");
-        double tid1 = Double.valueOf(input1);
-        double tid2 = Double.valueOf(input2);
-        BigDecimal tid11 = tid1.negate();
-        BigDecimal tid22 = tid2.negate();
-        double tid3 = (tid11 - tid22);
-        double timmar = (tid3 / 100);
-        double minuter = (tid3 % 100);
+        int tid1 = Integer.valueOf(input1);
+        int tid2 = Integer.valueOf(input2);
+        int tid3 = 0;
 
-        System.out.println("Timmar: " + timmar + " och minuter: " + minuter);
+        if (tid1<tid2) {
+            tid3 = (tid2 - tid1);
+        } else {
+            tid3 = (tid1 - tid2);
+        }
 
+        int timmar = (tid3 / 100);
+        int minuter = (tid3 % 100);
+
+        System.out.println(timmar + "timmar och: " + minuter + " minuter.");
          */
        }
 }
