@@ -102,7 +102,7 @@ public class day3PExercises {
             } else if (nrOne > nrTwo && nrTwo > nrThree) {
                 System.out.println("Strict decreasing");
             }else {
-                System.out.println("Neither1");
+                System.out.println("Neither");
             }
             }
 
@@ -116,7 +116,7 @@ public class day3PExercises {
                  }
              }
 
-         */
+        */
             //P3.7
         /*
         Scanner mode = new Scanner(System.in);
