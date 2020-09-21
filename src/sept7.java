@@ -124,8 +124,31 @@ public class sept7 {
 
          */
 
-            //P4.2
 
+            //P3.15
+            Scanner input = new Scanner(System.in);
+            System.out.print("Ange tre nr: ");
+            double numbers = input.nextDouble();
+            double numberOne = numbers % 100;
+            double numberTwo = numbers / 100;
+            double numberThree = numbers % 10;
+
+            System.out.print(numbers);
+
+            //Testar
+
+
+
+
+
+
+
+
+
+
+
+            //P4.2
+            /*
             Scanner in = new Scanner(System.in);
             int input = 0;
             int max;
@@ -176,5 +199,9 @@ public class sept7 {
             System.out.println("Max = " + max + " och min = " + min + ", jämna tal: " + even + " och ojämna tal: " + odd);
             System.out.println(cVal);
             System.out.println(adjacent);
+
+             */
     }
 }
+
+
