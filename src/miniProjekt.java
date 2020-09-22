@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+/*
 public class miniProjekt {
 
     public static double volume (int r){ //Method where we take in the value of the Radius to calculate the Sphere.
@@ -25,61 +25,54 @@ public class miniProjekt {
         while (!exitMenu) { //In this loop the calculator will continue to pop up with until condition !exitMenu changes to true.
             int r,h,m,numerator,max,x;
 
-            Scanner mode = new Scanner(System.in);
+            Scanner input = new Scanner(System.in);
             System.out.print("\n Calculate one of the following: \n 1. Calculate volume of a Sphere. \n 2. Calculate the volume of a cylinder. \n 4. Add all integers. \n 0. Exit \n\n Please select one of the options above: ");
 
 
-            if (mode.hasNextInt()) {
-                int chosenMode = mode.nextInt();
+            if (input.hasNextInt()) {
+                int chosenMode = input.nextInt();
 
                 if (chosenMode == 1) { //If option 1 is chosen it will automatically add a scanner and default message.
-                    Scanner input = new Scanner(System.in);
                     System.out.print("Please add a integer as radius for the sphere: ");
-
+                    r = input.nextInt();
 
                     while (!input.hasNextInt()) { //If it's not an integer that is entered this will notice the user and start a new scanner.
                         System.out.println("You didn't enter a valid integer!");
-                        input = new Scanner(System.in);
+                        r = input.nextInt();
                         System.out.print("Please add a integer as radius for the sphere: ");
                     }
                     if (input.hasNextInt()) { //This will be used if the user has entered a correct Integer.
-                        r = input.nextInt();
                         double result = volume(r);
                         System.out.println("The volume of the sphere is: " + result + "\nTry something else: ");
                     }
                 } else if (chosenMode == 2) { //If option 2 is chosen it will automatically add a scanner and default message.
-                    Scanner inputRadius = new Scanner(System.in);
                     System.out.print("Please add a radius as an integer of your choice: ");
-                    r = inputRadius.nextInt();
-                    Scanner inputHeight = new Scanner(System.in);
+                    r = input.nextInt();
                     System.out.print("Please add a height as an integer of your choice: ");
-                    h = inputHeight.nextInt();
+                    h = input.nextInt();
 
-                    while (!inputRadius.hasNextInt() || !inputHeight.hasNextInt()) { //If it's not an integer that is entered this will notice the user and start a new scanner.
-                        inputRadius = new Scanner(System.in);
+                    while (!input.hasNextInt() || !input.hasNextInt()) { //If it's not an integer that is entered this will notice the user and start a new scanner.
                         System.out.print("Please add a radius as an integer of your choice: ");
-                        r = inputRadius.nextInt();
-                        inputHeight = new Scanner(System.in);
+                        r = input.nextInt();
                         System.out.print("Please add a height as an integer of your choice: ");
-                        h = inputHeight.nextInt();
+                        h = input.nextInt();
 
-                    } if (inputRadius.hasNextInt() && inputHeight.hasNextInt()) { //This will be used if the user has entered a correct Integer.
+                    } if (input.hasNextInt() && input.hasNextInt()) { //This will be used if the user has entered a correct Integer.
                         double result = volume(r,h);
                         System.out.print("The volume of the cylinder is: " + result);
 
                     }
 
                 } else if (chosenMode == 4) { //If option 2 is chosen it will automatically add a scanner and default message.
-                    Scanner input = new Scanner(System.in);
                     System.out.print("Please add a integer of your choice: ");
+                    max = input.nextInt();
 
                     while (!input.hasNextInt()) { //If it's not an integer that is entered this will notice the user and start a new scanner.
                         System.out.println("You didn't enter a valid integer!");
-                        input = new Scanner(System.in);
+                        max = input.nextInt();
                         System.out.print("Please add a integer of your choice: ");
                     }
                     if (input.hasNextInt()) { //This will be used if the user has entered a correct Integer.
-                        max = input.nextInt();
                         double result = sum(max);
                         System.out.print("All integers within the range 1 to " + max + " is " + result);
                     }
@@ -91,5 +84,7 @@ public class miniProjekt {
         }
     }
 }
+
+ */
 
 
