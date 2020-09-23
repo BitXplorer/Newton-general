@@ -14,7 +14,7 @@ public class miniProject {
 
             } else if (input.hasNextInt()) {
                 validated = input.nextInt();
-                if (validated <= -1 || validated >= 6) {
+                if (validated < 0 || validated > 5) {
                     isValid = false;
                     System.out.print("You have entered a incorrect value. Please enter a valid option: ");
 
@@ -80,7 +80,7 @@ public class miniProject {
             int r,h,m,k,numerator,denominator,max,x,chosenMode;
 
             while (!exitMenu){
-                System.out.print("\n Calculate one of the following: \n 1. Calculate volume of a Sphere. \n 2. Calculate the volume of a cylinder.\n 3. Calulate fraction. \n 4. Add all integers. \n 5. Calculate the functional value (y=kx+m). \n 0. Exit \n\n Please select one of the options above: ");
+                System.out.print("\n Calculate one of the following: \n 1. Calculate volume of a Sphere. \n 2. Calculate the volume of a cylinder.\n 3. Calculate fraction. \n 4. Add all integers. \n 5. Calculate the functional value (y=kx+m). \n 0. Exit \n\n Please select one of the options above: ");
                 chosenMode = menuInput();
 
                 if (chosenMode == 1) { //If option 1 is chosen it will automatically add a scanner and default message.
