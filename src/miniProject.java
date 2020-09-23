@@ -118,9 +118,9 @@ public class miniProject {
                     System.out.println("The volume of the cylinder is: " + result);
 
                 } else if (chosenMode == 3) { //If option 2 is chosen it will automatically add a scanner and default message.
-                    System.out.print("Please add a numerator as an integer of your choice: ");
+                    System.out.print("Please add a positive numerator as an integer of your choice: ");
                     numerator = getNewPositiveInt();
-                    System.out.print("Please add a denominator as an integer of your choice: ");
+                    System.out.print("Please add a positive denominator as an integer of your choice: ");
                     denominator = getNewPositiveInt();
                     String result = fraction(numerator,denominator);
                     System.out.println("The fractional result of " + numerator +"/" + denominator + " is: " + result);
