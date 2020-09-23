@@ -18,7 +18,7 @@ public class miniProject {
                     isValid = false;
                     System.out.print("You have entered a incorrect value. Please enter a valid option2: ");
                     input.next();
-                } else if (validated > 0 && validated < 5){
+                } else {
                     isValid = true;
 
                 }
