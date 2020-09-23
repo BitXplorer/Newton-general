@@ -9,18 +9,18 @@ public class miniProject {
         do {
             if (!input.hasNextInt()) {
                 input.next();
-                System.out.println("You have entered a incorrect value. Please enter a valid option: ");
+                System.out.print("You have entered a incorrect value. Please enter a valid option: ");
                 isValid = false;
 
             } else if (input.hasNextInt()) {
-
+                validated = input.nextInt();
                 if (validated < 0 || validated > 5) {
                     isValid = false;
-                    System.out.println("You have entered a incorrect value. Please enter a valid option: ");
+                    System.out.print("You have entered a incorrect value. Please enter a valid option2: ");
                     input.next();
-                } else{
+                } else if (validated > 0 && validated < 5){
                     isValid = true;
-                    validated = input.nextInt();
+
                 }
             }
         } while (!isValid); {
@@ -34,7 +34,7 @@ public class miniProject {
         boolean isValid;
         do {
             if (!input.hasNextInt()) {
-                System.out.println("You have entered a incorrect value. Please enter a valid Integer: ");
+                System.out.print("You have entered a incorrect value. Please enter a valid Integer: ");
                 isValid = false;
                 input.next();
             } else {
@@ -84,7 +84,7 @@ public class miniProject {
                     System.out.print("Please add a height as an integer of your choice: ");
                     h = getNewInt();
                     double result = volume(r,h);
-                    System.out.print("The volume of the cylinder is: " + result);
+                    System.out.println("The volume of the cylinder is: " + result);
 
 
                 } else if (chosenMode == 4) { //If option 2 is chosen it will automatically add a scanner and default message.
