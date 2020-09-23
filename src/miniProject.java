@@ -42,6 +42,28 @@ public class miniProject {
                 }
         return validated;
     }
+    public static int getNewPositiveInt() {
+        Scanner input = new Scanner(System.in);
+        int validated = 0;
+        boolean isValid = false;
+        do {
+            if (!input.hasNextInt()) {
+                input.next();
+                System.out.print("You have entered a incorrect value. Please enter a positive integer: ");
+                isValid = false;
+            } else if (input.hasNextInt()) {
+                validated = input.nextInt();
+                if (validated <= 0) {
+                    isValid = false;
+                    System.out.print("You have entered a incorrect value. Please enter a positive integer: ");
+                } else {
+                    isValid = true;
+                }
+            }
+        } while (!isValid); {
+        }
+        return validated;
+    }
 
         public static double volume (int r){ //Method where we take in the value of the Radius to calculate the Sphere.
             double vol = (4*22*r*r*r)/(3*7);
@@ -56,7 +78,7 @@ public class miniProject {
         public static String fraction( int numerator, int denominator) { // Method where we count the volume of a straight cylinder. ( V = π*r*r*h )
             if(numerator>=0) return numerator/denominator +" "+ numerator%denominator + "/"+denominator;
             String s = numerator/denominator-1 + " ";
-            while((int)denominator/(int) denominator<0) numerator+=denominator;
+            while(denominator/denominator<0) numerator+=denominator;
             return s + numerator%denominator + "/" + denominator;
         }
 
@@ -97,9 +119,9 @@ public class miniProject {
 
                 } else if (chosenMode == 3) { //If option 2 is chosen it will automatically add a scanner and default message.
                     System.out.print("Please add a numerator as an integer of your choice: ");
-                    numerator = getNewInt();
+                    numerator = getNewPositiveInt();
                     System.out.print("Please add a denominator as an integer of your choice: ");
-                    denominator = getNewInt();
+                    denominator = getNewPositiveInt();
                     String result = fraction(numerator,denominator);
                     System.out.println("The fractional result of " + numerator +"/" + denominator + " is: " + result);
 
